@@ -1,0 +1,208 @@
+*{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  animation: transitionIn 0.7s;
+}
+
+@keyframes transitionIn{
+  from{
+    opacity: 0;
+    transform: translate(-10px);
+  }
+  to{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+body{
+  background-image: url("https://img.freepik.com/premium-vector/medical-service-concept-with-elder-patient-ventilator-flat-design-vector-illustration_493806-13948.jpg?size=626&ext=jpg&ga=GA1.1.2070821874.1712832784&semt=ais_user");
+  background-position:center;
+  background-size: cover;
+  
+  width: 100%;
+  height:100vh;
+  /* height: calc(150- 50px); */
+}
+
+#logo{
+  position: fixed;
+  left: 50px;
+  color: #3a50b4;
+  text-decoration: none;
+  font-weight: 900;
+  cursor: default;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 30px;
+}
+
+#logo span{
+  color: white;
+}
+
+.navbar{
+  background-color: rgba(174, 193, 202, 0.078);
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem 0;
+  backdrop-filter: blur(2px);
+  border-bottom: 4px solid rgba(120,120,120,.2);
+}
+
+.navbar a{
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.navbar a:hover{
+  color: #3d5a80
+}
+
+.App{
+  text-align: center;
+  margin: 2rem;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.container{
+  flex-direction: column;
+  border-radius: 100px;
+  padding: 50px;
+  box-shadow: 0 -3px 15px rgb(10,175,230),0  3px 10px rgb(242,242,243);
+  border: none;
+  margin: 0 20%;
+}
+
+label{
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+input{
+  padding: 10px;
+  width : 200px;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 100px;
+  margin-right: 10px;
+  border-top:30px;
+  transition: border 0.3s, box-shadow 0.3s , opacity 0.3s;
+  box-shadow: inset 0 -3px 15px rgb(124,203,230),inset 0 3px 10px rgb(124,203,230);
+}
+
+label{
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+select{
+  padding:3px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td{
+border: 1px solid #dddddd;
+text-align: center;
+padding: 8px;
+
+}
+td{
+  color: black;
+  font-weight: bold;
+}
+
+th{
+  background-color: #f2f2f2; 
+}
+
+button{
+  background-color: #0077ff;
+  margin-left: 5px;
+  color: aliceblue;
+  padding: 10px 20px;
+  border:none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  position: relative;
+  box-shadow: 0.5em 0.5em 0.5em #0000004d;
+  transition: background-color 0.3s ease,transform 0.2s ease;
+}
+
+button:hover{
+  background-color: grey;
+  transform: scale(1.05);
+}
+
+h2
+{
+  color:black;
+  font-size: 45px;
+  margin-top: 2%;
+}
+
+
+.selectDoctor{
+  margin-top: -8px;
+  font-size: 25px;
+  color: black;
+  font-weight: bolder;
+}
+.form-label{
+  color: black;
+  margin-top: 3px;
+  font-size: x-large;
+  margin-right: 10px;
+}
+
+.grp{
+  margin-top: 6%;
+}
+
+p{
+  color: black;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-top: -7px;
+}
+
+.update-grp{
+  margin-top: 10px;
+}
+
+.update-btn{
+  margin-right: 14px;
+}
+
+.doc{
+  color: black;
+  font-size: 35px;
+  margin-bottom: -10px;
+}
+
+.doc-details{
+  color: black;
+}
