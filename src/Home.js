@@ -12,8 +12,8 @@ const Home = () => {
   useEffect(() => {
     const fetchPatientAndDoctors = async () => {
       try {
-        const patientsResponse = await axios.get("http://restdemo01-env.eba-hfs4hmkf.ap-south-1.elasticbeanstalk.com//patient");
-        const doctorsResponse = await axios.get("http://restdemo01-env.eba-hfs4hmkf.ap-south-1.elasticbeanstalk.com//doctor");
+        const patientsResponse = await axios.get("http://restdemo01-env.eba-hfs4hmkf.ap-south-1.elasticbeanstalk.com/patient");
+        const doctorsResponse = await axios.get("http://restdemo01-env.eba-hfs4hmkf.ap-south-1.elasticbeanstalk.com/doctor");
         setPatients(patientsResponse.data);
         setDoctors(doctorsResponse.data); 
         console.log("doctor data from home", doctorsResponse.data);
@@ -53,7 +53,7 @@ const Home = () => {
 
   const handleDelete = async (patientId) => {
     try {
-      await axios.delete(`http://restdemo01-env.eba-hfs4hmkf.ap-south-1.elasticbeanstalk.com//patient/${patientId}`);
+      await axios.delete(`http://restdemo01-env.eba-hfs4hmkf.ap-south-1.elasticbeanstalk.com/patient/${patientId}`);
       setPatients((prevPatients) => prevPatients.filter((patient) => patient.id !== patientId));
     } catch (error) {
       console.error("error deleting patient: ", error);

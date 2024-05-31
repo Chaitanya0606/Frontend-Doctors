@@ -11,7 +11,7 @@ const EditPatient = ({ patientId, onClose , onUpdate}) => {
     console.log("Patient",patientId);
     const fetchPatientData = async () => {
       try{
-        const response = await axios.get(`http://restdemo01-env.eba-hfs4hmkf.ap-south-1.elasticbeanstalk.com//patient/${patientId}`);
+        const response = await axios.get(`http://restdemo01-env.eba-hfs4hmkf.ap-south-1.elasticbeanstalk.com/patient/${patientId}`);
         console.log("fetching before edit",response)
         setPatientData(response.data);
        
@@ -26,7 +26,7 @@ const EditPatient = ({ patientId, onClose , onUpdate}) => {
 
   const handleUpdate = async () => {
     try{
-      const response=await axios.put(`http://restdemo01-env.eba-hfs4hmkf.ap-south-1.elasticbeanstalk.com//patient/${patientId}`,patientData);
+      const response=await axios.put(`http://restdemo01-env.eba-hfs4hmkf.ap-south-1.elasticbeanstalk.com/patient/${patientId}`,patientData);
       onUpdate(response.data);
       onClose();
       

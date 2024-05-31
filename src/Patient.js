@@ -26,7 +26,7 @@ const PatientForm = () => {
     e.preventDefault();
 
     try{
-      const response = await axios.post("http://restdemo01-env.eba-hfs4hmkf.ap-south-1.elasticbeanstalk.com//patient",patientData);
+      const response = await axios.post("http://restdemo01-env.eba-hfs4hmkf.ap-south-1.elasticbeanstalk.com/patient",patientData);
       console.log("Patient Created : ",response.data);
     }catch (error){
       console.error("Error Creating patient :",error);
